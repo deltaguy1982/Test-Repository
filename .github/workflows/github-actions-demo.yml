@@ -21,5 +21,6 @@ jobs:
        - uses: actions/checkout@3.3.0
 
        - name:  List files in the repository
-           run:|
-             echo "the repository ${{github.repository}} contains the following files:"
+         run: |
+           echo "the repository ${{github.repository}} contains the following files:"
+           tree
